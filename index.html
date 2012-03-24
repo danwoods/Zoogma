@@ -23,11 +23,42 @@
         margin-left: auto;
         margin-right: auto;
       }
-      #content #tour-dates{
+      #content #tour-dates-container{
         width: 100%;
         height: 250px;
         position: absolute;
         bottom: 0;
+      }
+      #content #tour-dates{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+      }
+      #content #tour-dates ol{
+       position: absolute;
+       top: 0;
+       color: yellow;
+       list-style-type: none;
+       width: 100%;
+      }
+      #content #tour-dates ol li{
+        width: 100%;
+        height: 20px;
+      }
+      #content #tour-dates ol li span{
+      float: left;
+      margin-left: 15px;
+      }
+      #content #tour-dates #left-tour-dates-col{
+        float: left;
+        width: 50%;
+      }
+      #content #tour-dates #right-tour-dates-col{
+        clear: left;
+        float: left;
+        margin-left: 50%;
+        width: 50%;
       }
       img.background-image{
         width: 100%;
@@ -44,8 +75,34 @@
       <img src="images/symbol-as-black-bg.png" class="background-image" alt="Zoogma symbol" />
     </div>
 
-    <div id="tour-dates">
+    <div id="tour-dates-container">
       <img class="background-image" src="images/poster-top.png" alt="Tour Dates" />
+      <div id="tour-dates">  
+        <ol id="left-tour-dates-col">
+          <li><span class="date">3/14/2012</span><span class="location">Orlando, FL</span><span class="venue">The Social</span></li>
+          <li><span class="date">3/15/2012</span><span class="location">Jacksonville, FL</span><span class="venue">1904</span></li>
+          <li><span class="date">3/16/2012</span><span class="location">Huntsville, AL</span><span class="venue">Crossroads</span></li>
+          <li><span class="date">3/17/2012</span><span class="location">Nashville, TN</span><span class="venue">Exit/In</span></li>
+          <li><span class="date">3/21/2012</span><span class="location">Lansing, MI</span><span class="venue">Mac's Bar</span></li>
+          <li><span class="date">3/22/2012</span><span class="location">Chicago, IL</span><span class="venue">Bottom Lounge</span></li>
+          <li><span class="date">3/23/2012</span><span class="location">Kalamazoo, MI</span><span class="venue">Papa Pete's</span></li>
+          <li><span class="date">3/24/2012</span><span class="location">Cleveland, OH</span><span class="venue">Beachland Tavern</span></li>
+          <li><span class="date">3/28/2012</span><span class="location">Lexington, KY</span><span class="venue">Cosmic Charlie's</span></li>
+          <li><span class="date">3/29/2012</span><span class="location">Indianapolis, IN</span><span class="venue">Mousetrap</span></li>
+        </ol>
+        <ol id="right-tour-dates-col">
+          <li><span class="date">3/30/2012</span><span class="location">Louisville, KY</span><span class="venue">Headliners</span></li>
+          <li><span class="date">3/31/2012</span><span class="location">Columbus, OH</span><span class="venue">Bass Jam @ Scully's</span></li>
+          <li><span class="date">4/05/2012</span><span class="location">Lubbock, TX</span><span class="venue">Bash Riprocks 2</span></li>
+          <li><span class="date">4/06/2012</span><span class="location">Dallas, TX</span><span class="venue">Trees - Deep Ellum</span></li>
+          <li><span class="date">4/07/2012</span><span class="location">Austin, TX</span><span class="venue">Euphoria Festival</span></li>
+          <li><span class="date">4/13/2012</span><span class="location">Atlanta, GA</span><span class="venue">King Plow</span></li>
+          <li><span class="date">4/18/2012</span><span class="location">Flyod, VA</span><span class="venue">Sun Music Hall</span></li>
+          <li><span class="date">4/19/2012</span><span class="location">Raleigh, NC</span><span class="venue">Southland Ballroom</span></li>
+          <li><span class="date">4/20/2012</span><span class="location">Richmond, VA</span><span class="venue">Canal Club</span></li>
+          <li><span class="date">4/21/2012</span><span class="location">Asheville, NC</span><span class="venue">Orange Peel</span></li>
+        </ol>
+      </div>
     </div>
       
     </div>
