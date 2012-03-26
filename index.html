@@ -7,7 +7,7 @@
     <style type="text/css" media="screen">
       body{
         height: 100%;
-        width: 100%;
+        overflow: hidden;
       }
       #content{
         width: 100%;
@@ -16,12 +16,26 @@
         top: 0;
         left: 0;
         background-color: #000;
+        display: block;
       }
       #content #symbol{
-        width: 10%;
-        height: 30%;
+        margin-top: 50px;
+        width: 8%;
+        height: 25%;
         margin-left: auto;
         margin-right: auto;
+      }
+      #copy{
+        color: white;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-family: helvetica, verdana;
+      }
+      #copy span{
+        display: block;
+        margin-bottom: -9px;
       }
       #content #tour-dates-container{
         width: 100%;
@@ -38,9 +52,10 @@
       #content #tour-dates ol{
        position: absolute;
        top: 0;
-       color: yellow;
+       color: white;
        list-style-type: none;
        width: 100%;
+       margin-top: 40px;
       }
       #content #tour-dates ol li{
         width: 100%;
@@ -50,20 +65,32 @@
       float: left;
       margin-left: 15px;
       }
+      #content #tour-dates ol li span.date{
+        width: 95px;
+      }
+      #content #tour-dates ol li span.location{
+        width: 135px;
+      }
       #content #tour-dates #left-tour-dates-col{
         float: left;
+        margin-left: 15%;
         width: 50%;
       }
       #content #tour-dates #right-tour-dates-col{
         clear: left;
         float: left;
-        margin-left: 50%;
+        margin-left: 53%;
         width: 50%;
       }
       img.background-image{
         width: 100%;
         height: 100%;
         bottom: 0;
+      }
+      #social_networks{
+       position: absolute;
+       right: 10px;
+       top: 95%;
       }
     </style>
     
@@ -73,6 +100,11 @@
 
     <div id="symbol">
       <img src="images/symbol-as-black-bg.png" class="background-image" alt="Zoogma symbol" />
+    </div>
+
+    <div id="copy">
+      <span>Zoogma.net: Coming Soon</span><br />
+      <a href="http://www.facebook.com/zoogmaband" target="_blank" class="facebook"><img src="images/facebook.png" alt="Connect on Facebook!" /></a>
     </div>
 
     <div id="tour-dates-container">
@@ -104,7 +136,11 @@
         </ol>
       </div>
     </div>
-      
+
+    <div id="social_networks">
+      <a href="http://www.facebook.com/zoogmaband" target="_blank"><img src="images/facebook.png" alt="Connect on Facebook!" /></a>
+    </div>
+     
     </div>
   </body>
 </html>
